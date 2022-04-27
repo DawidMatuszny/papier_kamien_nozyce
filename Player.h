@@ -7,11 +7,14 @@
 #include <string>
 
 class Player {
-std::string name;
+std::string name, chosen;
+std::string choice[3];
 public:
     Player(const std::string &n);
-    std::string getName();
-    virtual int choose();
+    std::string getName() const;
+    virtual void choose();
+    void setChosen(int index);
+    std::string getChosen() const;
 };
 
 

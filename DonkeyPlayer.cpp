@@ -6,6 +6,6 @@
 
 DonkeyPlayer::DonkeyPlayer(const std::string &n) : Player(n){}
 
-int DonkeyPlayer::choose() {
-    return 1;
+void DonkeyPlayer::choose() {
+    setChosen(1);
 }

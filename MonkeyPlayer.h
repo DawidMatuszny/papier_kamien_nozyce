@@ -7,9 +7,10 @@
 #include "Player.h"
 
 class MonkeyPlayer : public Player{
+
 public:
     MonkeyPlayer(const std::string &n);
-    int choose();
+    void choose();
 };
 
 

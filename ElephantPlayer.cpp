@@ -6,12 +6,12 @@
 
 ElephantPlayer::ElephantPlayer(const std::string &n) : Player(n){}
 
-int ElephantPlayer::choose() {
+void ElephantPlayer::choose() {
     int random = rand() % 5;
-    if (random == 0)
-        return 1;
-    if (random == 1 || random == 2)
-        return 0;
+    if (random == 0 || random == 1)
+        setChosen(0);
+    if (random == 2)
+        setChosen(1);
     if (random == 3 || random == 4)
-        return 2;
+        setChosen(2);
 }

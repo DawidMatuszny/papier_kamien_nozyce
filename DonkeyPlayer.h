@@ -10,7 +10,7 @@
 class DonkeyPlayer : public Player {
 public:
     DonkeyPlayer(const std::string &n);
-    int choose();
+    void choose();
 };
 
 

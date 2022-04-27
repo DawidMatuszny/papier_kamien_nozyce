@@ -9,7 +9,6 @@
 class GameManager {
     Player &playerOne;
     Player &playerTwo;
-    std::string choice[3];
 public:
     GameManager(Player &p1, Player &p2);
     void play();

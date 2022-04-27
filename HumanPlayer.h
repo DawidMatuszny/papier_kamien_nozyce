@@ -5,9 +5,13 @@
 #ifndef ZOO_HUMANPLAYER_H
 #define ZOO_HUMANPLAYER_H
 
+#include "Player.h"
 
-class HumanPlayer {
+class HumanPlayer : public Player{
 
+public:
+    HumanPlayer(const std::string &n);
+    void choose();
 };
 
 

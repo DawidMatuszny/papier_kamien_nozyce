@@ -9,7 +9,7 @@
 class ElephantPlayer : public Player {
 public:
     ElephantPlayer(const std::string &n);
-    int choose();
+    void choose();
 };
 
 

@@ -7,6 +7,7 @@
 
 MonkeyPlayer::MonkeyPlayer(const std::string &n) : Player(n) {}
 
-int MonkeyPlayer::choose(){
-    return rand() % 3;
+void MonkeyPlayer::choose(){
+    int random = rand() % 3;
+    setChosen(random);
 }
